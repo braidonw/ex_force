@@ -18,7 +18,7 @@ defmodule ExForce.Client.Tesla do
     Response
   }
 
-  @default_api_version "42.0"
+  @default_api_version "54.0"
   @default_user_agent "ex_force"
 
   @doc """
