@@ -70,7 +70,7 @@ defmodule ExForce.Client.Tesla do
         {Tesla.Middleware.BaseUrl, instance_url},
         {Tesla.Middleware.Compression, format: "gzip"},
         Tesla.Middleware.FormUrlencoded,
-        {Tesla.Middleware.DecodeJson, engine: Jason},
+        {Tesla.Middleware.DecodeJson, engine: Poison},
         {Tesla.Middleware.Headers, get_headers(opts)}
       ],
       Keyword.get(opts, :adapter)
